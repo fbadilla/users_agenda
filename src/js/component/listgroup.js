@@ -21,16 +21,32 @@ const ModalUser = props => (
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<div className="modal-body">...</div>
+				<div className="modal-body">
+					<h4>Usuario</h4>
+					<h6>
+						<u>{props.user.username}</u>
+					</h6>
+					<h4>Email</h4>
+					<h6>
+						<email>
+							<u>{props.user.email}</u>
+						</email>
+					</h6>
+					<h4>ciudad</h4>
+					<h6>
+						<u>{props.user.address.city}</u>
+					</h6>
+					<h4>sitio web</h4>
+					<h6>
+						<u>{props.user.website}</u>
+					</h6>
+				</div>
 				<div className="modal-footer">
 					<button
 						type="button"
 						className="btn btn-secondary"
 						data-dismiss="modal">
-						Close
-					</button>
-					<button type="button" className="btn btn-primary">
-						Save changes
+						Cerrar
 					</button>
 				</div>
 			</div>
