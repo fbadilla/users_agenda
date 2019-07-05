@@ -38,6 +38,17 @@ export class Home extends React.Component {
 				</div>
 			);
 		});
-		return <div className="list-group">{lista}</div>;
+		return (
+			<div className="container center">
+				<div className="row">
+					<div className="col-6">
+						<div className="list-group">{lista}</div>
+					</div>
+					<div className="col-6">
+						<div className="list-group">{lista}</div>
+					</div>
+				</div>
+			</div>
+		);
 	}
 }
